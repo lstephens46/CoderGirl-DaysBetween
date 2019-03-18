@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDaysBetween", "MyDaysBetw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaysBetween", "DaysBetween\DaysBetween.csproj", "{9CCBF08E-2D2E-4CA7-AF80-D1807BD509C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "is_this_finally_it", "is_this_finally_it\is_this_finally_it.csproj", "{0108B405-CA39-4BD3-B1B9-6F27F09ED9F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9CCBF08E-2D2E-4CA7-AF80-D1807BD509C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CCBF08E-2D2E-4CA7-AF80-D1807BD509C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CCBF08E-2D2E-4CA7-AF80-D1807BD509C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0108B405-CA39-4BD3-B1B9-6F27F09ED9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0108B405-CA39-4BD3-B1B9-6F27F09ED9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0108B405-CA39-4BD3-B1B9-6F27F09ED9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0108B405-CA39-4BD3-B1B9-6F27F09ED9F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

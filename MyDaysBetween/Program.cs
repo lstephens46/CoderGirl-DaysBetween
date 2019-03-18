@@ -9,10 +9,10 @@ namespace DaysBetween
             // TODO:  Get two dates from the user.
             Console.WriteLine("\tDays Between Two Dates\t");
 
-            string firstDateString = GetDate();
-            string secondDateString = GetDate();
+            //string firstDateString = GetDate();
+            //string secondDateString = GetDate();
 
-            DaysBetween(firstDateString, secondDateString);
+            DaysBetween(GetDate(), GetDate());
             Console.ReadLine();
         }
 
@@ -26,28 +26,26 @@ namespace DaysBetween
         }
         // TODO: Create that has a method that counts the number of days between two different dates.
 
-        public static int DaysBetween(string firstDate, string secondDate)
+        public static TimeSpan DaysBetween(string firstDate, string secondDate)
         {   //convert date string to DateTime object
 
             DateTime parsedFirstDate = DateTime.Parse(firstDate);
             DateTime parsedSecondDate = DateTime.Parse(secondDate);
 
-            TimeSpan daysBetweenConvert;
-            //int daysBetween;
+            //TimeSpan daysBetween;
+            DateTime daysBetween;
 
             if (parsedFirstDate > parsedSecondDate)
             {
-                daysBetweenConvert = parsedFirstDate.Subtract(parsedSecondDate);
-                Console.WriteLine($"this is the if {daysBetweenConvert.Days}");
-                //daysBetween = daysBetweenConvert.Days;
-                return daysBetweenConvert.Days;
+                daysBetween = parsedFirstDate.Subtract(parsedSecondDate).Days;
+                Console.WriteLine($"this is the if{daysBetween}");
+                return daysBetween;
             }
             else//(parsedSecondDate > parsedFirstDate)
             {
-                daysBetweenConvert = parsedSecondDate.Subtract(parsedFirstDate);
-                Console.WriteLine($"this is the else {daysBetweenConvert.Days}");
-                //daysBetween = daysBetweenConvert.Days;
-                return daysBetweenConvert.Days;
+                daysBetween = parsedSecondDate.Subtract(parsedFirstDate);
+                Console.WriteLine($"this is the else {daysBetween}");
+                return daysBetween;
 
             }
             //else

@@ -7,10 +7,10 @@ namespace DaysBetween
         public static void Main()
         {
             // TODO:  Get two dates from the user.
-            Console.WriteLine("\tDays Between Two Dates\t");
+            string message = "Please enter a date in MM/DD/YYYY format:\t";
 
-            string firstDateString = GetDate();
-            string secondDateString = GetDate();
+            string firstDateString = GetDate(message);
+            string secondDateString = GetDate(message);
 
             DaysBetween(firstDateString, secondDateString);
             Console.ReadLine();
@@ -18,9 +18,9 @@ namespace DaysBetween
 
 
         //call this method twice to get the dates
-        public static string GetDate()
+        public static string GetDate(String message)
         {
-            Console.Write("Please enter a date in MM/DD/YYYY format:\t");
+            //Console.Write("Please enter a date in MM/DD/YYYY format:\t");
             string dateString = Console.ReadLine();
             return dateString;
         }

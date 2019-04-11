@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDaysBetween", "MyDaysBetween\MyDaysBetween.csproj", "{9ABA9851-AF0B-4691-AA42-57FE3EBD2F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaysBetween", "DaysBetween\DaysBetween.csproj", "{9CCBF08E-2D2E-4CA7-AF80-D1807BD509C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaysBetween2", "DaysBetween\DaysBetween2.csproj", "{9CCBF08E-2D2E-4CA7-AF80-D1807BD509C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "is_this_finally_it", "is_this_finally_it\is_this_finally_it.csproj", "{0108B405-CA39-4BD3-B1B9-6F27F09ED9F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaysBetween", "is_this_finally_it\DaysBetween.csproj", "{0108B405-CA39-4BD3-B1B9-6F27F09ED9F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

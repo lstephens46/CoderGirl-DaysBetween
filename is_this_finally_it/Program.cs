@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Transactions;
 
 namespace DaysBetween
 {
@@ -7,12 +8,11 @@ namespace DaysBetween
         public static void Main()
         {
             // TODO:  Get two dates from the user.
-            //string message = "Please enter a date in MM/DD/YYYY format:\t";
-
-            string firstDateString = GetDate();     //message);
-            string secondDateString = GetDate();    //message);
-
-            DaysBetween(firstDateString, secondDateString);
+            Console.WriteLine("Please enter a date in dd/mm/yyyy format");
+            DateTime firstDate = DateTime.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter a date in dd/mm/yyyy format");
+            DateTime secondDate = DateTime.Parse(Console.ReadLine());
+            DaysBetween(firstDate, secondDate);
             Console.ReadLine();
         }
 //        You need to use an "if/else" - testing the two dates.
@@ -30,41 +30,25 @@ namespace DaysBetween
 //        David Moeller   [7 days ago]
 //Math.Abs will also do the trick.
 
-        //call this method twice to get the dates
-        public static string GetDate()          //String message)
-        {
-            Console.Write("Please enter a date in MM/DD/YYYY format:\t");
-            string dateString = Console.ReadLine();
-            return dateString;
-        }
+      
         // TODO: Create that has a method that counts the number of days between two different dates.
 
-        public static double DaysBetween(string firstDate, string secondDate)
-        {   //convert date string to DateTime object
+        public static double DaysBetween(DateTime firstDate, DateTime secondDate)
+        {   
 
-            DateTime parsedFirstDate = DateTime.Parse(firstDate);
-            DateTime parsedSecondDate = DateTime.Parse(secondDate);
-
-            //TimeSpan daysBetweenConvert;
-            //int daysBetween;
-
-            if (parsedFirstDate > parsedSecondDate)
+            if (firstDate > secondDate)
             {
-                double daysBetween = (parsedFirstDate - parsedSecondDate).TotalDays;
+                double daysBetween = (firstDate - secondDate).Days;
                 Console.WriteLine($"if {daysBetween}");
                 return daysBetween;
             }
-            else//(parsedSecondDate > parsedFirstDate)
+            else
             {
-                double daysBetween = (parsedSecondDate - parsedFirstDate).TotalDays;
+                double daysBetween = (secondDate - firstDate).Days;
                 Console.WriteLine($"Else {daysBetween}");
                 return daysBetween;
             }
-            //else
-            //{   
-            //    Console.WriteLine("You did not enter a valid date");
-            //    return;
-            //}
+            
 
         }
     }
